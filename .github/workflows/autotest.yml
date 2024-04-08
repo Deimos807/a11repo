@@ -15,7 +15,7 @@ jobs:
           
       - name: Run test case 1
         run: |
-          python3 find_lowest_number/find_lowest_number.py find_lowest_number/find_lowest_number.py testdata/test1_actual.txt
+          python3 find_lowest_number/find_lowest_number.py find_lowest_number/numbers.txt testdata/test1_actual.txt
           diff testdata/test1_actual.txt testdata/test1_expected.txt
           
         
