@@ -1,0 +1,14 @@
+name: Automated test
+on: [push]
+jobs:
+  auto_test:
+    name: Auto test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Python 3.10
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.10"
+      - name: Produce output for 10 numbers
+        run: python find_lowest_number.py > output.txt
+        
