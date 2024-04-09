@@ -23,4 +23,8 @@ jobs:
       - name: Produce actual2.txt output and compare file with 1 number
         run: python3 find_lowest_number/find_lowest_number.py testdata/test2_input.txt actual2.txt
             diff testdata/test2_expected.txt actual2.txt
+            
+      - name: Produce actual3.txt output and compare file with no numbers
+        run: python3 find_lowest_number/find_lowest_number.py testdata/test3_input.txt actual3.txt
+            diff testdata/test3_expected.txt actual3.txt
 
